@@ -25,7 +25,7 @@ def parse_input() -> (list, int, bool, str, str, str):
 
     github_token = args[4]
 
-    github_repo = getenv('GITHUB_REPOSITORY_EXTERNAL')
+    github_repo = getenv('GITHUB_REPOSITORY')
 
     github_base_url = args[5] if num_args >= 6 else 'https://api.github.com'
 
