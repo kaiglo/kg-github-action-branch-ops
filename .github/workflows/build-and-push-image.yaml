@@ -33,4 +33,4 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           push: true
-          tags: templeme/delete-stale-branches:2
+          tags: templeme/delete-stale-branches:latest
