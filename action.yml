@@ -26,6 +26,10 @@ inputs:
     description: "The API base url to be used in requests to GitHub Enterprise"
     required: false
     default: "https://api.github.com"
+  github_repo:
+    description: "Any Repo url"
+    required: true
+    
 
 outputs:
   deleted_branches: # id of output
@@ -40,3 +44,4 @@ runs:
     - ${{ inputs.dry_run }}
     - ${{ inputs.github_token }}
     - ${{ inputs.github_base_url }}
+    - ${{ inputs.github_repo }}
